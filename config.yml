@@ -15,8 +15,8 @@ fortify:
     mediumThreshold: 20
     lowThreshold: 1400
 deploymentBranchSetting:
-  - name: 'dev'
-    usBuild: true
+  - name: 'master'
+    usBuild: false
 #   mavenBuild: true
 #   deployToArtifactory: true
 #   additionalMavenArgs: "-Dmaven.test.failure.ignore=true" 
