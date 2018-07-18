@@ -1,0 +1,68 @@
+notificationEmail: 'janani.anitha@gmail.com'
+project:
+    gitUrl: 'https://github.com/jacknblak/helloworld.git'
+    credentialsId: 'Github-ID'
+#    pomPathExtension: 'helloworld'
+    repoName: 'helloworld'
+fortify:
+    buildVersion: '1.0'
+    useExternalDependencyDirectory: false
+    fortifyProject: '54236'
+    sourceDirectory: '.'
+    sourceExclusions: 'target/**/*.*'
+    criticalThreshold: 50
+    highThreshold: 250
+    mediumThreshold: 20
+    lowThreshold: 1400
+deploymentBranchSetting:
+  - name: 'dev'
+    usBuild: true
+#   mavenBuild: true
+#   deployToArtifactory: true
+#   additionalMavenArgs: "-Dmaven.test.failure.ignore=true" 
+    docker:
+      repo: 'helloworld'
+#     tagIdentifier: '1.1'
+      credentialsId: 'Docker-ID'
+#     dockerfilePathExtension: 'XXXXX'
+      prompt: true
+#     if you want to prompt the user before you proceed to docker build, set this to true
+#   sonar:
+#   fortify:
+    ose:      
+      credentialsId: 'Docker-ID'
+      server: 'openshift-origin'
+      deployPrompts: true
+      deployToEnv:
+        - project: 'project namespace'  
+          app: 'helloworld' 
+          envName: 'dev'
+#        - project: 'project namespace-test'
+#          app: 'helloworld' 
+#          envName: 'test'
+#       - project: 'project namespace-stage'
+#         app: 'helloworld'
+##        appGreen: 'admin-stackgreen'
+##        this is another parameter to add if you wish to choose between blue and green deployments
+#         multiDataCenterDeployment: false
+##        if you want to deploy to 2 diff datacenters
+#         envName: 'stage'
+#         ## This will deploy to each of the above environments
+  - name: 'development'
+    dockerBuild: true
+#   mavenBuild: true
+#   deployToArtifactory: true
+#   additionalMavenArgs: "-Dmaven.test.failure.ignore=true" 
+    docker:
+      repo: 'helloworld'
+#     tagIdentifier: '1.1'
+      credentialsId: 'Docker-ID'
+#     dockerfilePathExtension: 'XXXXX'
+      prompt: true
+#     if you want to prompt the user before you proceed to docker build, set this to true
+#   sonar:
+#   fortify:
+    ose:      
+      credentialsId: 'Docker-ID'
+      server: 'openshift'
+      deployPrompts: false
