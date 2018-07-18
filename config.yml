@@ -16,7 +16,8 @@ fortify:
     lowThreshold: 1400
 deploymentBranchSetting:
   - name: 'master'
-    usBuild: false
+    usBuild: true
+    dockerBuild: true
 #   mavenBuild: true
 #   deployToArtifactory: true
 #   additionalMavenArgs: "-Dmaven.test.failure.ignore=true" 
