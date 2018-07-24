@@ -1,6 +1,6 @@
 notificationEmail: 'janani.anitha@gmail.com'
 project:
-    gitUrl: 'https://github.com/jacknblak/helloworld.git'
+    gitUrl: 'https://github.com/ssaravanaprabu/helloworld.git'
     credentialsId: 'Github-ID'
 #    pomPathExtension: 'helloworld'
     repoName: 'helloworld'
@@ -32,13 +32,13 @@ deploymentBranchSetting:
 #   fortify:
     ose:      
       credentialsId: 'Docker-ID'
-      server: 'openshift-origin'
+      server: 'https://console.starter-us-west-1.openshift.com/console'
       deployPrompts: true
       deployToEnv:
-        - project: 'project namespace'  
+        - project: 'demo-openshift-project'  
           app: 'helloworld' 
           envName: 'dev'
-#        - project: 'project namespace-test'
+#        - project: 'demo-openshift-project'
 #          app: 'helloworld' 
 #          envName: 'test'
 #       - project: 'project namespace-stage'
