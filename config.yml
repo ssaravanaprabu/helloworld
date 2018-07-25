@@ -17,7 +17,7 @@ fortify:
 deploymentBranchSetting:
   - name: 'master'
     usBuild: false
-    dockerBuild: false
+    dockerBuild: true
 #   mavenBuild: true
 #   deployToArtifactory: true
 #   additionalMavenArgs: "-Dmaven.test.failure.ignore=true" 
