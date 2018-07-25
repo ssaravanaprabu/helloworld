@@ -39,7 +39,7 @@ RUN cat /var/www/data/index.html
 #RUN echo "daemon off;" >> /etc/nginx/nginx.conf
 
 # Expose ports
-EXPOSE 8088
+EXPOSE 8080
 
 USER root
 
