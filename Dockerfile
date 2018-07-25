@@ -27,7 +27,7 @@ RUN rm -v /etc/nginx/nginx.conf
 ADD nginx.conf /etc/nginx/
 COPY procfile.sh /usr/local/bin/
 
-RUN chmod +x /usr/local/bin/procfile.sh
+#RUN chmod +x /usr/local/bin/procfile.sh
 
 RUN mkdir /etc/nginx/logs
 
