@@ -16,7 +16,7 @@ fortify:
     lowThreshold: 1400
 deploymentBranchSetting:
   - name: 'master'
-    usBuild: true
+    usBuild: false
     dockerBuild: true
 #   mavenBuild: true
 #   deployToArtifactory: true
