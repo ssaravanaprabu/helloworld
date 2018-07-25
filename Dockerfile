@@ -25,7 +25,7 @@ RUN rm -v /etc/nginx/nginx.conf
 
 # Copy a configuration file from the current directory
 ADD nginx.conf /etc/nginx/
-COPY procfile.sh /usr/local/bin/
+#COPY procfile.sh /usr/local/bin/
 
 #RUN chmod +x /usr/local/bin/procfile.sh
 
