@@ -17,7 +17,7 @@ fortify:
 deploymentBranchSetting:
   - name: 'master'
     usBuild: false
-    dockerBuild: true
+    dockerBuild: false
 #   mavenBuild: true
 #   deployToArtifactory: true
 #   additionalMavenArgs: "-Dmaven.test.failure.ignore=true" 
@@ -32,7 +32,7 @@ deploymentBranchSetting:
 #   fortify:
     ose:      
       credentialsId: 'Docker-ID'
-      server: 'https://console.starter-us-west-1.openshift.com/console'
+      server: 'https://console.starter-us-west-1.openshift.com'
       deployPrompts: true
       deployToEnv:
         - project: 'demo-openshift-project'  
