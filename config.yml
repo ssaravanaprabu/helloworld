@@ -42,7 +42,7 @@ deploymentBranchSetting:
 #          app: 'helloworld' 
 #          envName: 'test'
 #       - project: 'project namespace-stage'
-#         app: 'helloworld'
+##        app: 'helloworld'
 ##        appGreen: 'admin-stackgreen'
 ##        this is another parameter to add if you wish to choose between blue and green deployments
 #         multiDataCenterDeployment: false
