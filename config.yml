@@ -7,7 +7,7 @@ project:
 fortify:
     buildVersion: '1.0'
     useExternalDependencyDirectory: false
-    fortifyProject: '54236'
+    fortifyProject: '5423632'
     sourceDirectory: '.'
     sourceExclusions: 'target/**/*.*'
     criticalThreshold: 50
@@ -16,7 +16,7 @@ fortify:
     lowThreshold: 1400
 deploymentBranchSetting:
   - name: 'master'
-    usBuild: false
+    usBuild: true
     dockerBuild: true
 #   mavenBuild: true
 #   deployToArtifactory: true
